@@ -1,0 +1,29 @@
+{
+    "name": "devmachine/guzzle-rottentomatoes-client",
+    "type": "library",
+    "description": "Guzzle client for RottenTomatoes API - http://developer.rottentomatoes.com.",
+    "keywords": [ "rottentomatoes", "api", "guzzle" ],
+    "homepage": "http://devmachine.net",
+    "license": [ "MIT" ],
+    "authors": [
+        { "name": "Dmitri Lakachauskis", "email": "dmitri@devmachine.net" }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle-services": "~0.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": { "Devmachine\\Guzzle\\RottenTomatoes\\": "src/" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
