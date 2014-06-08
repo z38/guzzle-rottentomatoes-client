@@ -91,19 +91,46 @@ array(1) {
     }
     'links' =>
     array(6) {
-      'self' =>
-      string(63) "http://api.rottentomatoes.com/api/public/v1.0/movies/13049.json"
-      'alternate' =>
-      string(66) "http://www.rottentomatoes.com/m/terminator_3_rise_of_the_machines/"
-      'cast' =>
-      string(68) "http://api.rottentomatoes.com/api/public/v1.0/movies/13049/cast.json"
-      'clips' =>
-      string(69) "http://api.rottentomatoes.com/api/public/v1.0/movies/13049/clips.json"
-      'reviews' =>
-      string(71) "http://api.rottentomatoes.com/api/public/v1.0/movies/13049/reviews.json"
-      'similar' =>
-      string(71) "http://api.rottentomatoes.com/api/public/v1.0/movies/13049/similar.json"
+      ...
     }
   }
 }
 ```
+
+## API methods
+
+Please use [interractive documentation](http://developer.rottentomatoes.com/io-docs) to get list of available API endpoints and corresponding parameters. Below you can find the list of appropriate client methods.
+
+```php
+use Devmachine\Guzzle\RottenTomatoes\RottenTomatoesClient;
+
+$client = RottenTomatoesClient::factory('<api-key>');
+
+// Movies
+$client->movies();
+$client->moviesBoxOffice();
+$client->moviesOpening();
+$client->moviesInTheaters();
+$client->moviesUpcoming();
+
+// Individual movie
+$client->movie();
+$client->movieCast();
+$client->movieClips();
+$client->movieReviews();
+$client->movieSimilar();
+$client->movieAlias();
+
+// DVDs
+$client->dvdsTopRentals();
+$client->dvdsCurrentReleases();
+$client->dvdsNewReleases();
+$client->dvdsUpcoming();
+
+// Lists
+$client->lists();
+$client->listsMovies();
+$client->listsDVDs();
+```
+
+
