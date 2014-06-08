@@ -4,6 +4,10 @@
 
 Guzzle client for [TottenTomatoes](http://www.rottentomatoes.com) API.
 
+#### Description
+
+A simple client for RottenTomatoes made with Guzzle 4. [Guzzle Services](https://github.com/guzzle/guzzle-services) is under heavy development, hence this client does not provide some handy features like _Resource Iterators_ (pagination) existed in Guzzle 3.
+
 ## Installation
 
 This library can be installed using Composer. Add the following to your composer.json:
@@ -15,6 +19,8 @@ This library can be installed using Composer. Add the following to your composer
     }
 }
 ```
+
+## Sample usage
 
 ```php
 use Devmachine\Guzzle\RottenTomatoes\RottenTomatoesClient;
@@ -76,26 +82,7 @@ array(1) {
     }
     'abridged_cast' =>
     array(5) {
-      [0] =>
-      array(3) {
-        ...
-      }
-      [1] =>
-      array(3) {
-        ...
-      }
-      [2] =>
-      array(3) {
-        ...
-      }
-      [3] =>
-      array(3) {
-        ...
-      }
-      [4] =>
-      array(3) {
-        ...
-      }
+      ...
     }
     'alternate_ids' =>
     array(1) {
