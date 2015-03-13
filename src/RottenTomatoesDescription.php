@@ -24,9 +24,9 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve the top level lists available in the API.',
                     'parameters' => [
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'listsMovies' => [
                     'httpMethod' => 'GET',
@@ -36,9 +36,9 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve the movie lists available in the API.',
                     'parameters' => [
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'listsDVDs' => [
                     'httpMethod' => 'GET',
@@ -48,9 +48,9 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve the DVD lists available in the API.',
                     'parameters' => [
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
                 // Search
@@ -66,18 +66,18 @@ class RottenTomatoesDescription extends Description
                             'location' => 'query',
                             'required' => true,
                             'minLength' => 1,
-                            'description' => 'The plain text search query to search for a movie.'
+                            'description' => 'The plain text search query to search for a movie.',
                         ],
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
                 // Movies
@@ -89,15 +89,15 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve Top Box Office earning movies, sorted by most recent weekend gross ticket sales.',
                     'parameters' => [
                         'limit' => [
-                            '$ref' => 'LimitParameter'
+                            '$ref' => 'LimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'moviesOpening' => [
                     'httpMethod' => 'GET',
@@ -107,15 +107,15 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve opening movies.',
                     'parameters' => [
                         'limit' => [
-                            '$ref' => 'LimitParameter'
+                            '$ref' => 'LimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'moviesInTheaters' => [
                     'httpMethod' => 'GET',
@@ -125,18 +125,18 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve movies currently in theaters.',
                     'parameters' => [
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'moviesUpcoming' => [
                     'httpMethod' => 'GET',
@@ -146,18 +146,18 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve upcoming movies.',
                     'parameters' => [
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
                 // DVDs
@@ -169,15 +169,15 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve the current top DVD rentals.',
                     'parameters' => [
                         'limit' => [
-                            '$ref' => 'LimitParameter'
+                            '$ref' => 'LimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'dvdsCurrentReleases' => [
                     'httpMethod' => 'GET',
@@ -187,18 +187,18 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve current release DVDs.',
                     'parameters' => [
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'dvdsNewReleases' => [
                     'httpMethod' => 'GET',
@@ -208,18 +208,18 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve new release DVDs.',
                     'parameters' => [
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'dvdsUpcoming' => [
                     'httpMethod' => 'GET',
@@ -229,18 +229,18 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve upcoming release DVDs.',
                     'parameters' => [
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
                 // Movie info.
@@ -252,12 +252,12 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve detailed information on a specific movie.',
                     'parameters' => [
                         'id' => [
-                            '$ref' => 'IdParameter'
+                            '$ref' => 'IdParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'movieCast' => [
                     'httpMethod' => 'GET',
@@ -267,12 +267,12 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve complete cast for a movie.',
                     'parameters' => [
                         'id' => [
-                            '$ref' => 'IdParameter'
+                            '$ref' => 'IdParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'movieClips' => [
                     'httpMethod' => 'GET',
@@ -282,12 +282,12 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve related clips and trailers for a movie.',
                     'parameters' => [
                         'id' => [
-                            '$ref' => 'IdParameter'
+                            '$ref' => 'IdParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
                 'movieReviews' => [
                     'httpMethod' => 'GET',
@@ -297,27 +297,27 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve the reviews for a movie.',
                     'parameters' => [
                         'id' => [
-                            '$ref' => 'IdParameter'
+                            '$ref' => 'IdParameter',
                         ],
                         'page' => [
-                            '$ref' => 'PageParameter'
+                            '$ref' => 'PageParameter',
                         ],
                         'page_limit' => [
-                            '$ref' => 'PageLimitParameter'
+                            '$ref' => 'PageLimitParameter',
                         ],
                         'country' => [
-                            '$ref' => 'CountryParameter'
+                            '$ref' => 'CountryParameter',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
+                            '$ref' => 'ApiKeyParameter',
                         ],
                         'review_type' => [
                             'type' => 'string',
                             'location' => 'query',
                             'default' => 'top_critic',
-                            'enum' => ['all', 'top_critic', 'dvd']
-                        ]
-                    ]
+                            'enum' => ['all', 'top_critic', 'dvd'],
+                        ],
+                    ],
                 ],
                 'movieSimilar' => [
                     'httpMethod' => 'GET',
@@ -327,7 +327,7 @@ class RottenTomatoesDescription extends Description
                     'summary' => 'Retrieve similar movies for a movie.',
                     'parameters' => [
                         'id' => [
-                            '$ref' => 'IdParameter'
+                            '$ref' => 'IdParameter',
                         ],
                         'limit' => [
                             'type' => 'integer',
@@ -338,9 +338,9 @@ class RottenTomatoesDescription extends Description
                             'description' => 'Limit the number of similar movies returned.',
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
                 // Find movie by alias ID.
@@ -355,18 +355,18 @@ class RottenTomatoesDescription extends Description
                             'type' => 'string',
                             'location' => 'query',
                             'required' => true,
-                            'description' => 'Vendor identifier.'
+                            'description' => 'Vendor identifier.',
                         ],
                         'type' => [
                             'type' => 'string',
                             'location' => 'query',
                             'default' => 'imdb',
-                            'enum' => ['imdb']
+                            'enum' => ['imdb'],
                         ],
                         'api_key' => [
-                            '$ref' => 'ApiKeyParameter'
-                        ]
-                    ]
+                            '$ref' => 'ApiKeyParameter',
+                        ],
+                    ],
                 ],
 
             ],
@@ -375,7 +375,7 @@ class RottenTomatoesDescription extends Description
                     'type' => 'string',
                     'location' => 'query',
                     'required' => true,
-                    'sentAs' => 'apikey'
+                    'sentAs' => 'apikey',
                 ],
                 'PageParameter' => [
                     'type' => 'integer',
@@ -383,7 +383,7 @@ class RottenTomatoesDescription extends Description
                     'default' => 1,
                     'minimum' => 1,
                     'maximum' => 25,
-                    'description' => 'The selected page of returned results.'
+                    'description' => 'The selected page of returned results.',
                 ],
                 'PageLimitParameter' => [
                     'type' => 'integer',
@@ -391,7 +391,7 @@ class RottenTomatoesDescription extends Description
                     'default' => 30,
                     'minimum' => 1,
                     'maximum' => 50,
-                    'description' => 'The amount of results to show per page.'
+                    'description' => 'The amount of results to show per page.',
                 ],
                 'LimitParameter' => [
                     'type' => 'integer',
@@ -407,22 +407,22 @@ class RottenTomatoesDescription extends Description
                     'default' => 'us',
                     'minLength' => 2,
                     'maxLength' => 2,
-                    'description' => 'Provides localized data for the country.'
+                    'description' => 'Provides localized data for the country.',
                 ],
                 'IdParameter' => [
                     'type' => 'string',
                     'location' => 'uri',
                     'required' => true,
-                    'description' => 'Resource identifier.'
+                    'description' => 'Resource identifier.',
                 ],
 
                 'DefaultOutput' => [
                     'type' => 'object',
                     'additionalProperties' => [
-                        'location' => 'json'
-                    ]
+                        'location' => 'json',
+                    ],
                 ],
-            ]
+            ],
         ]);
     }
 }
