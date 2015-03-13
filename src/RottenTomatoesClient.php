@@ -1,33 +1,32 @@
 <?php
 
-/** @noinspection PhpUnnecessaryFullyQualifiedNameInspection */
 namespace Devmachine\Guzzle\RottenTomatoes;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 
 /**
- * @method \GuzzleHttp\Command\Model lists()
- * @method \GuzzleHttp\Command\Model listsMovies()
- * @method \GuzzleHttp\Command\Model listsDVDs()
+ * @method array lists()
+ * @method array listsMovies()
+ * @method array listsDVDs()
  *
- * @method \GuzzleHttp\Command\Model movies()
- * @method \GuzzleHttp\Command\Model moviesBoxOffice()
- * @method \GuzzleHttp\Command\Model moviesOpening()
- * @method \GuzzleHttp\Command\Model moviesInTheaters()
- * @method \GuzzleHttp\Command\Model moviesUpcoming()
+ * @method array movies()
+ * @method array moviesBoxOffice()
+ * @method array moviesOpening()
+ * @method array moviesInTheaters()
+ * @method array moviesUpcoming()
  *
- * @method \GuzzleHttp\Command\Model movie()
- * @method \GuzzleHttp\Command\Model movieCast()
- * @method \GuzzleHttp\Command\Model movieClips()
- * @method \GuzzleHttp\Command\Model movieReviews()
- * @method \GuzzleHttp\Command\Model movieSimilar()
- * @method \GuzzleHttp\Command\Model movieAlias()
+ * @method array movie()
+ * @method array movieCast()
+ * @method array movieClips()
+ * @method array movieReviews()
+ * @method array movieSimilar()
+ * @method array movieAlias()
  *
- * @method \GuzzleHttp\Command\Model dvdsTopRentals()
- * @method \GuzzleHttp\Command\Model dvdsCurrentReleases()
- * @method \GuzzleHttp\Command\Model dvdsNewReleases()
- * @method \GuzzleHttp\Command\Model dvdsUpcoming()
+ * @method array dvdsTopRentals()
+ * @method array dvdsCurrentReleases()
+ * @method array dvdsNewReleases()
+ * @method array dvdsUpcoming()
  */
 class RottenTomatoesClient extends GuzzleClient
 {
