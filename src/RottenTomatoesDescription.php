@@ -6,10 +6,10 @@ use GuzzleHttp\Command\Guzzle\Description;
 
 class RottenTomatoesDescription extends Description
 {
-    public function __construct($baseUrl = 'http://api.rottentomatoes.com/api/public/v1.0/')
+    public function __construct($baseUri = 'http://api.rottentomatoes.com/api/public/v1.0/')
     {
         parent::__construct([
-            'baseUrl' => $baseUrl,
+            'baseUri' => $baseUri,
             'name' => 'RottenTomatoes',
             'description' => 'RottenTomatoes API - http://developer.rottentomatoes.com',
             'apiVersion' => '1.0',

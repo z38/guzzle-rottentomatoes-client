@@ -38,7 +38,7 @@ class RottenTomatoesClient extends GuzzleClient
      */
     public static function factory($apiKey, array $options = [])
     {
-        return new static(new Client(), new RottenTomatoesDescription(), array_merge([
+        return new static(new Client(), new RottenTomatoesDescription(), null, null, null, array_merge([
             'defaults' => ['api_key' => $apiKey],
         ], $options));
     }
